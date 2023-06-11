@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(a_fundo.png);
+    background-position: top center;
+    background-size: cover;
+    padding: 10px 5%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.logo{
+    width: 140px;
+    margin-left: -10px;
+}
+
+nav ul li{
+    list-style: none;
+}
+.login_btn{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 800;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #93e6f9, #0592f6);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+}

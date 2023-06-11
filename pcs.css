@@ -37,6 +37,20 @@ nav{
     width: 140px;
     z-index: 1;
 }
+/* menu{
+    display: none;
+} */
+span#burguer {
+    color: rgb(0, 181, 253);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burguer:hover {
+    color: black;
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
