@@ -10,38 +10,83 @@ a:-webkit-any-link{
 }
 .hero{
     width: 100%;
-    min-height: 50vh;
-    background-image: url(a_fundo.png);
+    min-height: 100vh;
+    /* background-image: url(a_fundo.png); */
     background-position: top center;
-    background-size: cover;
-    padding: 10px 5%;
+    /* background-size: cover; */
+    /* padding: 10px 5%; */
     overflow: hidden;
     position: relative;
-    z-index: 0;
+    
+}
+#img_fundo{
+    width: 320px;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: -20px;
+    z-index: -1;
 }
 .logo{
-    width: 140px;
-    margin-left: -10px;
+    width: 120px;
+    margin-left: 15px;
+}
+span#burguer {
+    color: rgb(0, 181, 253);
+    display: block;
+    margin-left: 15px;
+    margin-top: -20px;
+    text-align: left;
+    cursor: pointer;
+}
+span.material-symbols-outlined{
+    font-size: 42px;
+}
+menu{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 nav ul li{
     list-style: none;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 .login_btn{
     display: block;
     text-decoration: none;
     color: #333;
-    margin-right: 15px;
+    margin: 20px 0px 20px 15px;
     font-weight: 800;
 }
 .btn{
-    display: inline-block;
+    display: block;
+    max-width: 180px;
     text-decoration: none;
     padding: 14px 40px;
     color: #fff;
     background-image: linear-gradient(45deg, #93e6f9, #0592f6);
     font-size: 14px;
+    margin: 20px 15px;
     border-radius: 30px;
     border-top-right-radius: 0px;
     transition: 0.5s;
+}
+.content{
+    margin: 20px 15px;
+    max-width: 280px;
+}
+.content h1{
+    margin-bottom: 20px;
+}
+.content .btn{
+    margin: 20px 0px 20px -5px;
+}
+.feature_img{
+    position: absolute;
+    top: 160px;
+    left: 125px;
+    width: 200px;
+    z-index: -1;
 }

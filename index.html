@@ -14,17 +14,15 @@
 </head>
 <body onresize="changingSize()">
     <div class="hero">
+        <img id="img_fundo" src="a_fundo.png">
         <header>
             <nav>
+                <a href="#"><img src="a_logo.png" class="logo"></a>
+                <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                    menu
+                </span>
                 <menu id="itens">
-                    
                     <ul>
-                        <li><a href="#"><img src="a_logo.png" class="logo"></a></li>
-                        <li>
-                            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-                                menu
-                            </span>
-                        </li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">How it works</a></li>
                         <li><a href="#">Privacy</a></li>
@@ -47,7 +45,7 @@
             <img src="w_small.png" class="feature_img anim">
         </main>
     </div>
-    <!-- <script>
+    <script>
         function changingSize() {
             if (window.innerWidth >= 992) {
                 itens.style.display = 'block'
@@ -64,6 +62,6 @@
             }
             
         }
-    </script> -->
+    </script>
 </body>
 </html>
