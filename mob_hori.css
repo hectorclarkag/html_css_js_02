@@ -121,6 +121,7 @@ nav ul li a{
     bottom: 0;
     right: 0px;
     width: 80%;
+    overflow: hidden;
     opacity: 75%;
     z-index: -1;
 }

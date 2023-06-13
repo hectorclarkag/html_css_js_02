@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 568px) {
+    .logo{
+        width: 30%;
+        max-width: 150px;
+        margin-left: 3%;
+    }
+    #img_fundo{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+    .feature_img{
+        top: 20%;
+        bottom: 0;
+        right: 0px;
+        overflow: hidden;
+        width: 70%;
+        opacity: 75%;
+        z-index: -1;
+    }
+    .both_btn{
+        display: inline-flex;
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
