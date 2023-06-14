@@ -3,23 +3,19 @@
 
     .logo{
         width: 140px;
-        margin-left: 5%;
+        margin-left: 120px;
     }
    
     span#burguer {
         display: none;
     }
     
+    nav{
+        display: flex;
+    }
     
-    nav ul li{
-        position: relative;
-        top: -180px;
-        left: 33%;
-        
-        display: inline;
-        list-style: none;
-        margin: 10px 25px;
-        transform: translate(-50%, -50%);
+    nav ul li#itens{
+        display: none;
     }
     nav ul li a{
         text-decoration: none;
@@ -27,25 +23,40 @@
         font-weight: 800;
         margin-right: 30px;
     }
-    .login_btn{
+    /* .login_btn{
         position: absolute;
         top: 100px;
         right: -100px;
-    }
+    } */
     .btn{
         
     }
     .content{
-        
+        margin-left: 5%;
+        max-width: 992px;
     }
     .content h1{
-        
     }
     .content p{
-        
+        font-size: 24px;
+        max-width: 700px;
+    }
+    #download_app_tv{
+        text-align: center;
+        width: 120px;
+    }
+    #download_app_mob{
+        display: none;
+    }
+    nav > div.mob_menu{
+        display: none;
     }
     .content .btn{
-        
+        text-align: center;
+        margin-top: -40px;
+        margin-left: -700px;
+        padding: 15px 0;
+        width: 180px;
     }
     .btn:hover{
         border-top-right-radius: 30px;

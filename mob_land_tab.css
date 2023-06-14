@@ -28,4 +28,7 @@
         width: 100%;
         justify-content: space-around;
     }
+    .tv_menu{
+        display: none;
+    }
 }

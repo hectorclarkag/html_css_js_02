@@ -101,11 +101,11 @@ nav ul li a{
     width: 100%;
 }
 .content h1{
-    font-size: calc(4vh + 4vw + 2vmin);
+    font-size: calc(3vh + 3vw + 1vmin);
     margin: 5%;
 }
 .content p{
-    font-size: calc(1.3vh + 1.3vw + 1.3vmin);
+    font-size: calc(1.1vh + 1.1vw + 1vmin);
     font-weight: 500;
     width: 85%;
     margin: 5%;
@@ -124,4 +124,7 @@ nav ul li a{
     overflow: hidden;
     opacity: 75%;
     z-index: -1;
+}
+.tv_menu{
+    display: none;
 }
