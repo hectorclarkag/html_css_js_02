@@ -31,4 +31,7 @@
     .tv_menu{
         display: none;
     }
+    div .tv_log_down{
+        display: none;
+    }
 }
