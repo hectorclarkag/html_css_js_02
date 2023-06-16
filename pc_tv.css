@@ -7,21 +7,20 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background-image: url(a_fundo.png);
     background-position: center;
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
     position: relative;
 }
+.logo{
+    width: 140px;
+}
 nav{
     padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.logo{
-    width: 140px;
 }
 nav ul li{
     display: inline-block;
@@ -42,6 +41,7 @@ nav ul li a{
 .btn{
     display: inline-block;
     text-decoration: none;
+    min-width: 180px;
     padding: 14px 40px;
     color: #fff;
     background-image: linear-gradient(45deg, #93e6f9, #0592f6);
@@ -71,15 +71,25 @@ nav ul li a{
 .btn:hover{
     border-top-right-radius: 30px;
 }
+.img_fundo {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50% , -50%);
+}
 .feature_img{
     width: 530px;
     position: absolute;
     bottom: 0;
     right: 10%;
+    z-index: -1;
 }
 .feature_img.anim{
     animation-delay: 1.5s;
 }
+
 .anim{
     opacity: 0;
     transform: translateY(30px);
@@ -92,4 +102,49 @@ nav ul li a{
         transform: translateY(0px);
     }
     
+}
+
+@media screen and (min-width: 992px) {
+    #download_app_btn_tab {
+        display: none;
+    }
+    menu#menu_tab {
+        display: none;
+    }
+    span#burguer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #download_app_btn_pc {
+        display: none;
+    }
+    menu#menu_pc{
+        display: none;
+    }
+    .btn {
+        display: block;
+        max-width: 280px;
+        margin-top: 40px;
+    }
+    span#burguer {
+        color: rgb(0, 181, 253);
+        cursor: pointer;
+    }
+    span.material-symbols-outlined{
+        font-size: 42px;
+    }
+    menu#menu_tab ul li {
+        list-style: none;
+        margin: 10px 5px;
+    }
+    menu#menu_tab ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 700;
+    }
+    menu{
+        display: none;
+    }
 }

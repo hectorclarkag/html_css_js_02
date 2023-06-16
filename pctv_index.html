@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="pc_tv.css">
     <title>Ally</title>
 </head>
@@ -11,24 +12,56 @@
     <div class="hero">
         <nav>
             <img src="a_logo.png" class="logo">
+            <menu id="menu_pc">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </menu>
+            <div>
+                <a href="#" class="login_btn">Log In</a>
+                <a href="#" class="btn" id="download_app_btn_pc">Download App</a>
+            </div>
+        </nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="menu_tab">
             <ul>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">How it works</a></li>
                 <li><a href="#">Privacy</a></li>
             </ul>
-            <div>
-                <a href="#" class="login_btn">Log In</a>
-                <a href="#" class="btn">Download App</a>
-            </div>
-        </nav>
+        </menu>
         <div class="content">
             <h1 class="anim">Make<br>New Friends.</h1>
             <p class="anim">
                 Ally is a new social media platform that helps you connect with your friends or make a new one. Now let's explore this opportunity to be with someone!
             </p>
             <a href="#" class="btn anim">Join Now</a>
+            <a href="#" class="btn" id="download_app_btn_tab">Download App</a>
         </div>
+        <img src="a_fundo.png" class="img_fundo">
         <img src="w_small.png" class="feature_img anim">
     </div>
+    <script>
+        // function changingSize() {
+        //     if (window.innerWidth >= 992) {
+        //         itens.style.display = 'block'
+        //     } else {
+        //         itens.style.display = 'none'
+        //     }
+        // }
+        function clickMenu() {
+            if (menu_tab.style.display == 'block') {
+                menu_tab.style.display = 'none'
+  
+            } else {
+                menu_tab.style.display = 'block'
+            }
+            
+        }
+    </script>
 </body>
 </html>
